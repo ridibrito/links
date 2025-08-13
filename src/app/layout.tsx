@@ -52,7 +52,7 @@ export default function RootLayout({
               </Link>
               <p className="text-center text-balance text-md text-[color:var(--muted)]">Acelere vendas com Marketing, IA e CRM em um só lugar.</p>
               <div className="mt-2 flex items-center gap-4">
-                <a href="https://www.linkedin.com/company/coruss/" target="_blank" className="social-icon" aria-label="LinkedIn"><IconLinkedIn /></a>
+                <a href="https://www.linkedin.com/company/corussconsultoria" target="_blank" className="social-icon" aria-label="LinkedIn"><IconLinkedIn /></a>
                 <a href="https://www.facebook.com/corussconsultoria" target="_blank" className="social-icon" aria-label="Facebook"><IconFacebook /></a>
                 <a href="https://www.instagram.com/corussconsultoria" target="_blank" className="social-icon" aria-label="Instagram"><IconInstagram /></a>
                 <a href="https://www.tiktok.com/@corussconsultoria" target="_blank" className="social-icon" aria-label="TikTok"><IconTikTok /></a>
