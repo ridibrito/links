@@ -1,103 +1,55 @@
+import LinkButton from "@/components/LinkButton";
+import { IconBook, IconBot, IconRocket, IconWhatsApp } from "@/components/icons";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+    <div className="container px-5 pb-16">
+      <section className="flex flex-col gap-4">
+        <LinkButton href="https://api.whatsapp.com/send?phone=5561981601063&text=Olá%20Coruss%2C%20quero%20agendar%20minha%20Análise%20Estratégica" variant="light" plainIcon icon={<IconWhatsApp size={32} />}>
+          Agende sua Análise Estratégica
+        </LinkButton>
+        <LinkButton href="https://coruss.com.br/servicos/marketing-digital" icon={<IconRocket />}>
+          Conheça Nossas Soluções de Marketing
+        </LinkButton>
+        <LinkButton href="https://www.coruss.com.br/inteligencia-artificial" icon={<IconBot />}>
+          Agentes de Inteligência Artificial
+        </LinkButton>
+        <div className="mt-2 w-full">
+          <div >
+            <iframe
+              src="https://www.youtube.com/embed/y00g2YEug5o"
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              className="w-full"
+              allowFullScreen
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <LinkButton href="https://coruss.com.br/blog/" icon={<IconBook />}>
+          Leia nosso Último Artigo no Blog
+        </LinkButton>
+        <h3 className="mt-3 text-sm font-semibold text-[color:var(--muted)]">Organize suas Vendas com CRM</h3>
+        
+        <div className="mt-2 grid grid-cols-3 gap-3">
+          <LinkButton href="https://www.coruss.com.br/bitrix24" stacked plainIcon icon={<Image className="logo-white" src="/bitrix.png" alt="Bitrix24" width={110} height={36} /> }>
+            Bitrix24
+          </LinkButton>
+          <LinkButton href="https://www.coruss.com.br/ploomes-crm" stacked plainIcon icon={<Image className="logo-white" src="/ploomes.png" alt="Ploomes" width={160} height={56}  /> }>
+            Ploomes CRM
+          </LinkButton>
+          <LinkButton href="https://www.coruss.com.br/zoho-crm" stacked plainIcon icon={<Image className="logo-white" src="/zoho.webp" alt="Zoho CRM" width={110} height={36} /> }>
+            Zoho CRM Plus
+          </LinkButton>
+        </div>
+        
+        
+        
+      </section>
+
+    
     </div>
   );
 }

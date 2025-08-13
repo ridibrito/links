@@ -1,0 +1,16 @@
+<svg width="512" height="160" viewBox="0 0 512 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Coruss">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ff9a5c"/>
+      <stop offset="100%" stop-color="#ff7a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="160" fill="none"/>
+  <g transform="translate(16,24)">
+    <circle cx="40" cy="56" r="28" fill="url(#g)"/>
+    <rect x="72" y="28" width="8" height="56" rx="4" fill="#111" opacity=".08"/>
+    <text x="96" y="64" font-family="Inter, system-ui, -apple-system, Segoe UI, Arial" font-size="48" font-weight="700" fill="#111">Coruss</text>
+  </g>
+  <title>Coruss</title>
+</svg>
+
