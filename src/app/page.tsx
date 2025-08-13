@@ -9,7 +9,7 @@ export default function Home() {
         <LinkButton href="https://api.whatsapp.com/send?phone=5561981601063&text=Olá%20Coruss%2C%20quero%20agendar%20minha%20Análise%20Estratégica" variant="light" plainIcon icon={<IconWhatsApp size={32} />}>
           Agende sua Análise Estratégica
         </LinkButton>
-        <LinkButton href="https://coruss.com.br/servicos/marketing-digital" icon={<IconRocket />}>
+        <LinkButton href="https://coruss.com.br/servicos" icon={<IconRocket />}>
           Conheça Nossas Soluções de Marketing
         </LinkButton>
         <LinkButton href="https://www.coruss.com.br/inteligencia-artificial" icon={<IconBot />}>
