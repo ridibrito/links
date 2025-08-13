@@ -55,7 +55,7 @@ export default function RootLayout({
                 <a href="https://www.linkedin.com/company/corussconsultoria" target="_blank" className="social-icon" aria-label="LinkedIn"><IconLinkedIn /></a>
                 <a href="https://www.facebook.com/corussconsultoria" target="_blank" className="social-icon" aria-label="Facebook"><IconFacebook /></a>
                 <a href="https://www.instagram.com/coruss_consultoria/" target="_blank" className="social-icon" aria-label="Instagram"><IconInstagram /></a>
-                <a href="https://www.tiktok.com/@corussconsultoria" target="_blank" className="social-icon" aria-label="TikTok"><IconTikTok /></a>
+                <a href="https://www.tiktok.com/@coruss_consultoria" target="_blank" className="social-icon" aria-label="TikTok"><IconTikTok /></a>
                 <a href="https://www.youtube.com/@coruss_consultoria" target="_blank" className="social-icon" aria-label="YouTube"><IconYouTube /></a>
               </div>
             </div>
